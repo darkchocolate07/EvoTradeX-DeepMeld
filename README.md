@@ -23,7 +23,7 @@ ___        _            ___         _     _
 
 ---
 
-## 🔥 OVERVIEW
+## OVERVIEW
 This project integrates **fuzzy clustering**, **deep learning** (GRU + Transformer), and **reinforcement learning** to create an **adaptive AI trading system**. It continuously ingests and processes real-world financial data, extracts meaningful features, and generates **buy/sell signals** via a sophisticated RL agent. The pipeline handles data from multiple sources (e.g., insider info, news, social media sentiment) to inform a robust market prediction model.
 
 ---
@@ -31,7 +31,7 @@ This project integrates **fuzzy clustering**, **deep learning** (GRU + Transform
 
 ---
 
-## 🚀 KEY COMPONENTS
+## KEY COMPONENTS
 - **Data Pipeline**: Pulls and updates real-time financial data (stocks, crypto) plus insider info, news sentiment, and social media analytics.
 - **Feature Engineering**: Cleans, normalizes, and fuses multiple data sources. Creates custom indicators.
 - **Clustering & Fuzzification**: Learns fuzzy memberships (DIC, FCKN, FuzzyART) for interpretability.
@@ -42,7 +42,7 @@ This project integrates **fuzzy clustering**, **deep learning** (GRU + Transform
 
 ---
 
-## ⚙ INSTALLATION
+## INSTALLATION
 1. **Clone the Repo**:
 git clone https://github.com/YourUser/AITradingSystem.git cd AITradingSystem
 
@@ -51,7 +51,7 @@ git clone https://github.com/YourUser/AITradingSystem.git cd AITradingSystem
 
 ---
 
-## 📊 DATA PIPELINE
+## DATA PIPELINE
 - **historical_price_data.py**: Fetches historical OHLCV from Yahoo Finance or any chosen source.
 - **news_sentiment.py**: Extracts sentiment from major news outlets.
 - **social_media_sentiment.py**: Scrapes Twitter/Reddit to gauge crowd sentiment.
@@ -59,14 +59,14 @@ git clone https://github.com/YourUser/AITradingSystem.git cd AITradingSystem
 
 ---
 
-## 🏆 FEATURE ENGINEERING
+## FEATURE ENGINEERING
 - **technical_indicators.py**: Creates advanced features (RSI, MACD, Bollinger Bands).
 - **expert_system.py**: Optionally adds logic-based features or flags (insider buys, unusual volume).
 - **DataFrame merges** to produce final training set with relevant features and targets.
 
 ---
 
-## 🎯 CLUSTERING & FUZZIFICATION
+## CLUSTERING & FUZZIFICATION
 Inside **PredictionModel/Clustering_Fuzzification**:
 - **DIC.py**: Discrete Incremental Clustering to handle unknown number of clusters.  
 - **FCKN.py**: Fuzzy Kohonen Clustering Network merges fuzzy logic + Kohonen self-organization.  
@@ -76,14 +76,14 @@ These modules transform numeric data into fuzzy memberships that feed the fuzzy 
 
 ---
 
-## 🔥 SeroFAM MODULE
+## SeroFAM MODULE
 In **PredictionModel/SeroFam**:
 - **SeroFAM.py**: A Self-Reorganizing Fuzzy Associative Machine that incrementally refines fuzzy rules in real-time.  
 - Combines Hebbian-like updates with fuzzy rule management to handle non-stationary markets.
 
 ---
 
-## 📈 TRANSFORMER + GRU MODEL
+## TRANSFORMER + GRU MODEL
 In **PredictionModel/TransformerModel**:
 - **GRUTransformer.py**: Hybrid deep model.  
 - GRU handles short-term memory of price movements.  
@@ -92,7 +92,7 @@ In **PredictionModel/TransformerModel**:
 
 ---
 
-## 🧠 REINFORCEMENT LEARNING AGENT
+## REINFORCEMENT LEARNING AGENT
 In **PredictionModel/RL_Agent**:
 - **environment.py**: Custom Gym environment for simulating trades, PnL, transaction costs.  
 - **memory.py**: Rollout buffer for storing state transitions.  
@@ -101,7 +101,7 @@ In **PredictionModel/RL_Agent**:
 
 ---
 
-## 🎨 FRONTEND
+## FRONTEND
 In **frontend**:
 - Real-time dashboard to display:
 - **Market data** (candlesticks, volume).  
