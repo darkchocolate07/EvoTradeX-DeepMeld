@@ -40,16 +40,7 @@ This project integrates **fuzzy clustering**, **deep learning** (GRU + Transform
 - **RL Agent**: PPO-based agent that optimizes portfolio allocations and trade decisions.
 - **Frontend**: Real-time interactive dashboard to visualize signals, trades, and portfolio metrics.
 
----
 
-## INSTALLATION
-1. **Clone the Repo**:
-git clone https://github.com/YourUser/AITradingSystem.git cd AITradingSystem
-
-2. **Install Dependencies**:
-3. **Set Up Data**: Provide your data in the `data/` folder or configure `data_download/` scripts to fetch from APIs.
-
----
 
 ## DATA PIPELINE
 - **historical_price_data.py**: Fetches historical OHLCV from Yahoo Finance or any chosen source.
