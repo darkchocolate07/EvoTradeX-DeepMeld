@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #121212;
+  --content-bg: #1e1e1e;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a0a0a0;
+  --accent-blue: #3b82f6;
+  --accent-deep-blue: #1e40af;
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+  --accent-yellow: #f59e0b;
+}
+
+body {
+  background: linear-gradient(135deg, var(--background) 0%, #1a1a2e 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.card {
+  @apply bg-gray-800 rounded-lg shadow-lg p-6;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-md transition-colors;
+}
+
+.input-field {
+  @apply bg-gray-700 text-white rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.option-card {
+  @apply bg-gray-700 hover:bg-gray-600 cursor-pointer p-4 rounded-md transition-colors;
+}
+
+.option-card.selected {
+  @apply bg-blue-600;
+}
+
+table {
+  @apply w-full border-collapse;
+}
+
+th {
+  @apply text-left py-3 px-4 bg-gray-800 text-gray-300 font-medium;
+}
+
+td {
+  @apply py-3 px-4 border-b border-gray-700;
+}
+
+tr:hover {
+  @apply bg-gray-700;
+}
+
+.profit {
+  @apply text-green-500;
+}
+
+.loss {
+  @apply text-red-500;
+}

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "evotradex"
+version = "0.1.0"
+description = ""
+authors = ["Timenikhil <48746822+Timenikhil@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+yfinance = "^0.2.54"
+tqdm = "^4.67.1"
+lxml = "^5.3.1"
+dotenv = "^0.9.9"
+nltk = "^3.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
